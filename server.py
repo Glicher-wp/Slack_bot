@@ -25,7 +25,7 @@ def bot_msg(channel, timestamp):
 
     message = bot.get_message_payload()
 
-    #slack_web_client.chat_postMessage(**message)
+    slack_web_client.chat_postMessage(**message)
 
     slack_web_client.reactions_add(channel=channel,
                                    name="thumbsup",
